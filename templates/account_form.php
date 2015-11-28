@@ -89,69 +89,11 @@
 
 <table class="table table-striped table-condensed table-bordered" >
 
-<tr  class="success">
-    <td colspan="2" style="font-size:20px; text-align:center;">NETWORTH</td>
-</tr>
 
 <!-- NETWORTH ROW -->
-<tr class="active">
-    <td style="width:50%">
-        <strong>TOTAL</strong>
-    </td>
-    <td style="width:50%">
-        <strong><div style="text-align:right">
-                <?php
-                $networth = ($portfolioTotal + $units + $bidLocked);
-                echo($unitsymbol . htmlspecialchars(number_format($networth, $decimalplaces, ".", ","))); //networth defined previously
-                ?>
-            </div></strong>
-    </td>
-</tr>
-
 
 <tr>
-    <td colspan="2">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <table class="table table-condensed  table-bordered" >
-            <tr  class="success">
-                <td colspan="8" style="font-size:20px; text-align: center;">ACCOUNTS</td>
-            </tr>
-            <tr   class="active">
-                <th>Asset</th>
-                <th>Locked*</th>
-                <th>Available</th>
-                <th><div style="text-align:right">Value</div></th>
-            </tr>
-            <tr><!--USD-->
-                <td><?php echo(strtoupper($unittype)) //set in finance.php ?></td></td>
-                <td><?php echo("<form action='orders.php' method='post'><span class='nobutton'><button type='submit' name='side' value='b'>" . $unitsymbol . number_format($bidLocked,$decimalplaces,".",",") . "</button></span></form>"); ?></td>
-                <td><?php echo($unitsymbol . number_format($units,$decimalplaces,".",",")) ?></td>
-                <td><div style="text-align:right"><?php echo($unitsymbol . number_format(($units+$bidLocked),$decimalplaces,".",",")) ?></div></td>
-            </tr>
-
-        </table>
-
-
-
-    </td></tr><tr><td colspan="2">
-
-
-
-
+    <tr><td colspan="2">
 
 
         <table class="table table-striped table-condensed table-bordered" >
@@ -170,6 +112,10 @@
                 <th>Loss/Gain</th>
                 <th><div style="text-align:right">Value</div></th>
             </tr>
+            
+
+
+
             <!-- STOCKS ROW -->
             <?php $i = 0;
             foreach ($portfolio as $row) {
@@ -246,6 +192,41 @@
             <?php
             } //$i==0 else statement
             ?>
+            
+            
+            
+            
+            <!--Main currency ROW-->
+            <tr><!--USD-->
+                <td><?php echo(strtoupper($unittype)) //set in finance.php ?></td></td>
+                <td>Currency</td><!--type-->
+                <td>N/A</td><!--control-->
+                <td><?php echo($unitsymbol . number_format($units,$decimalplaces,".",",")) ?></td><!--available-->
+                <td><?php echo("<form action='orders.php' method='post'><span class='nobutton'><button type='submit' name='side' value='b'>" . $unitsymbol . number_format($bidLocked,$decimalplaces,".",",") . "</button></span></form>"); ?></td><!--locked-->
+                <td><div style="text-align:right"><?php echo($unitsymbol . number_format(($units+$bidLocked),$decimalplaces,".",",")) ?></div></td><!--total-->
+                <td>N/A</td><!--price-->
+                <td>N/A</td><!--purchase-->
+                <td>N/A</td><!--P&L-->
+                <td><div style="text-align:right"><?php echo($unitsymbol . number_format(($units+$bidLocked),$decimalplaces,".",",")) ?></div></td><!--total-->
+            </tr>
+            
+            
+            
+            
+            
+                        <!--total-->
+            <tr class="active">
+                <td colspan="9"><strong>TOTAL</strong></td>
+                <td>
+                    <strong><div style="text-align:right">
+                            <?php
+                            $networth = ($portfolioTotal + $units + $bidLocked);
+                            echo($unitsymbol . htmlspecialchars(number_format($networth, $decimalplaces, ".", ","))); //networth defined previously
+                            ?>
+                        </div></strong>
+                </td>
+            </tr>
+
         </table>
 
 
