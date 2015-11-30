@@ -15,8 +15,9 @@
                         <li><a href="convert.php">CONVERT</a></li>
                         <li><a href="exchange.php">EXCHANGE</a></li>
                         <li><a href="orders.php">ORDERS</a></li>
+                        <li><a href="orderhistory.php">HISTORY</a></li>
                         <li><a href="trades.php">TRADES</a></li>
-                        <li><a href="history.php">HISTORY</a></li>
+                        <li><a href="history.php">LOGS</a></li>
                         <li><a href="transparency.php">TRANSPARENCY</a></li>
                         <li><a href="information.php">INFORMATION</a></li>
                         <li><a href="status.php">STATUS</a></li>
@@ -53,8 +54,7 @@
                 <div class="input-group">
                     <a href="logout.php">
                         <button type="button" class="btn btn-danger  btn-sm ">
-                        <b>EXIT</b>
-                        <span class="glyphicon glyphicon-remove"></span>
+                        <b></b><span class="glyphicon glyphicon-remove"></span>
                         </button>
                     </a>
                 </div>
