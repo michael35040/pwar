@@ -8,7 +8,7 @@ require("../../includes/constants.php");
 
 <!DOCTYPE html>
 <html lang="en">
-<?php $sitename="Pulwar Group"; ?>
+<?php //$sitename="Pulwar Group"; ?>
 <head>
 
     <meta charset="utf-8">
@@ -17,7 +17,7 @@ require("../../includes/constants.php");
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title><?php echo($sitename); ?></title>
+    <title><?php echo(htmlspecialchars($sitename)); ?></title>
 
     <!-- Bootstrap Core CSS -->
     <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
@@ -62,7 +62,7 @@ require("../../includes/constants.php");
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top"><?php echo($sitename); ?></a>
+            <a class="navbar-brand page-scroll" href="#page-top"><?php echo(htmlspecialchars($sitename)); ?></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -75,7 +75,7 @@ require("../../includes/constants.php");
                     <a class="page-scroll" href="#services">Services</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    <a class="page-scroll" href="#brokerage">Brokerage</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#about">About</a>
@@ -103,8 +103,14 @@ require("../../includes/constants.php");
 <header>
     <div class="container">
         <div class="intro-text">
-            <div class="intro-lead-in">Invest with Excellence</div>
-            <div class="intro-heading">Welcome!</div>
+            <div class="intro-heading" style="text-shadow: 1px 1px #000000;">PULWAR Group</div>
+            <div class="intro-lead-in" style="text-shadow: 1px 1px #000000;">Verum Quaero</div> 
+            
+            <!-- 
+            Seeking Truth
+            “Verum Quaero,” is Latin, and can be loosely translated as the truth, I seek. I say `loosely’ because when I asked a friend of mine, who is a linguist, to translate the phrase he originally suggested the words, “Quaerere Verum.” I decided against this interpretation because the literal meaning–seek truth– strays from the message I want to put forward, that of gaining insight, and maybe even a glimpse of truth, through self-examination. On the contrary, Quaerere Verum sounds more like a command for others to seek truth. I went back to my friend and asked for another interpretation. The result was Verum Quaero.
+            -->
+          <!--  <div class="intro-lead-in">Warrior solutions to all problems.</div> -->
             <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
         </div>
     </div>
@@ -116,7 +122,7 @@ require("../../includes/constants.php");
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Services</h2>
-                <h3 class="section-subheading text-muted">Solution Oriented</h3>
+                <h3 class="section-subheading text-muted">We are a multi-faceted, truth seeking, solutions oriented company located near our Nation's Capital in Quantico, VA.</h3>
             </div>
         </div>
         <div class="row text-center">
@@ -129,8 +135,8 @@ require("../../includes/constants.php");
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
                     </span>
-                <h4 class="service-heading">Buy</h4>
-                <p class="text-muted">Low fees</p>
+                <h4 class="service-heading">Consulting</h4>
+                <p class="text-muted">Business consulting advising on a wide-range of issues facing companies today.</p>
             </div>
 
             <!-- INVESTING -->
@@ -139,8 +145,8 @@ require("../../includes/constants.php");
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-area-chart fa-stack-1x fa-inverse"></i>
                     </span>
-                <h4 class="service-heading">Invest</h4>
-                <p class="text-muted">Transparent markets</p>
+                <h4 class="service-heading">Capital Management</h4>
+                <p class="text-muted">Assisting our clients in achieving their investment objectives at the least risk possible.</p>
             </div>
 
             <!-- TRADING -->
@@ -149,8 +155,8 @@ require("../../includes/constants.php");
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-refresh fa-stack-1x fa-inverse"></i>
                     </span>
-                <h4 class="service-heading">Trade</h4>
-                <p class="text-muted">Liquid assets</p>
+                <h4 class="service-heading">Intelligence</h4>
+                <p class="text-muted">Competitive Intelligence systematically gathering, analyzing and managing information on industrial competitors</p>
             </div>
 
             <!-- SECURITY -->
@@ -160,27 +166,27 @@ require("../../includes/constants.php");
                         <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
                     </span>
                 <h4 class="service-heading">Security</h4>
-                <p class="text-muted">Cryptographically protected</p>
+                <p class="text-muted">Protect resources through Executive Protection, Physical Security, and Cyber Security.</p>
             </div>
 
             <!-- SERVICES -->
             <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-cog fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-share-alt fa-stack-1x fa-inverse"></i>
                     </span>
-                <h4 class="service-heading">Service</h4>
-                <p class="text-muted">Investment advisory</p>
+                <h4 class="service-heading">Counterintelligence</h4>
+                <p class="text-muted">Ability to provide training or conduct Counterintelligence, Counter Surveillance, Counter Espionage, and Private Investigation</p>
             </div>
 
             <!-- TRANSFER -->
             <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-share-alt fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-cog fa-stack-1x fa-inverse"></i>
                     </span>
-                <h4 class="service-heading">Transfer</h4>
-                <p class="text-muted">Instant and seamless</p>
+                <h4 class="service-heading">Development</h4>
+                <p class="text-muted">Capable of assisting in all stages of the development, designing, and manufacturing process.</p>
             </div>
 
 
@@ -191,12 +197,12 @@ require("../../includes/constants.php");
 </section>
 
 <!-- Portfolio Grid Section -->
-<section id="portfolio" class="bg-light-gray">
+<section id="brokerage" class="bg-light-gray">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Asset Portfolio</h2>
-                <h3 class="section-subheading text-muted">Convert instantly.</h3>
+                <h2 class="section-heading">Brokerage</h2>
+                <h3 class="section-subheading text-muted">Custom selection of financial assets that we offer to our clientele.</h3>
             </div>
         </div>
         <div class="row">
@@ -281,11 +287,11 @@ require("../../includes/constants.php");
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>2009-2011</h4>
+                                <h4>1985</h4>
                                 <h4 class="subheading">Phase One</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Our start</p>
+                                <p class="text-muted">Our start focusing on corporate and financial intelligence</p>
                             </div>
                         </div>
                     </li>
@@ -295,11 +301,11 @@ require("../../includes/constants.php");
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>March 2011</h4>
+                                <h4>1995</h4>
                                 <h4 class="subheading">Phase Two</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">International Expansion</p>
+                                <p class="text-muted">Expanding our services into the Security Management and physical security area.</p>
                             </div>
                         </div>
                     </li>
@@ -309,11 +315,11 @@ require("../../includes/constants.php");
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>December 2012</h4>
+                                <h4>1999</h4>
                                 <h4 class="subheading">Phase Three</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Innovative Technology</p>
+                                <p class="text-muted">Introduced our techological inovative brokerage services allowing our clients to trade and hold various assets that lower their costs and risks.</p>
                             </div>
                         </div>
                     </li>
@@ -323,11 +329,11 @@ require("../../includes/constants.php");
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>July 2014</h4>
+                                <h4>2014</h4>
                                 <h4 class="subheading">Phase Four</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Giving Back</p>
+                                <p class="text-muted">Consolidated our multiple business offerings ranging from corporate intelligence and security to financial brokerage services under one company.</p>
                             </div>
                         </div>
                     </li>
@@ -349,9 +355,7 @@ require("../../includes/constants.php");
 
 
 <!-- Team Section -->
-<section id="portfolio" class="bg-light-gray">
-
-    <!--<section id="team" class="bg-light-gray">-->
+<section id="team" class="bg-light-gray">
     <div class="container">
 
 
@@ -508,9 +512,11 @@ Chief Executive Officer (CEO) – As the top manager, the CEO is typically respo
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Contact Us</h2>
-                <h3 class="section-subheading text-muted">How can we help?</h3>
+                <h3 class="section-subheading text-muted">P.O. Box 100<br>Quantico, VA 22134</h3>
             </div>
         </div><!--row-->
+
+
         <div class="row">
             <div class="col-lg-12">
                 <form name="sentMessage" id="contactForm" novalidate>
@@ -543,7 +549,8 @@ Chief Executive Officer (CEO) – As the top manager, the CEO is typically respo
                     </div>
                 </form>
             </div>
-        </div><!--row-->
+        </div>
+
     </div>
 </section>
 
@@ -551,7 +558,7 @@ Chief Executive Officer (CEO) – As the top manager, the CEO is typically respo
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <span class="copyright">Copyright &copy; <?php echo($sitename); ?> 2014</span>
+                <span class="copyright">Copyright &copy; <?php echo(htmlspecialchars($sitename)); ?> 2016</span>
             </div>
             <div class="col-md-4">
                 <ul class="list-inline social-buttons">
