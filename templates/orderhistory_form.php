@@ -33,7 +33,7 @@
                 if ($tabletitle !== "All")
                 {
                     echo('<span class="input-group-btn" style="display:inline;">
-    <form  method="post" action="orders.php"><button type="submit" class="btn btn-success btn-xs" name="history" value="all">
+    <form  method="post" action="orderhistory.php"><button type="submit" class="btn btn-success btn-xs" name="history" value="all">
         <span class="glyphicon glyphicon-plus-sign"></span> Show All
     </button></form>
 </span>
