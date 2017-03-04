@@ -207,7 +207,7 @@ function getPrice($price)
 
     //$price = $price/(pow(10, $decimalplaces););
     //$price = $price/(10**$decimalplaces);
-    $price = $price/1000;
+    $price = $price/100;
 
     //setlocale(LC_MONETARY, 'en_US');
     //$price = money_format('%(#10n', $price) . "\n"; // ($        1,234.57)
@@ -222,7 +222,7 @@ function setPrice($price)
 
     //$price = $price*(pow(10, $decimalplaces););
     //$price = $price*(10**$decimalplaces);
-    $price = $price*1000;
+    $price = $price*100;
 
     $price=floor($price);
     //if (!is_int($price)) { apologize("Price must be numeric!");} //if quantity is numeric
